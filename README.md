@@ -25,7 +25,7 @@
 <tr>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/livingroom/original_image.png" alt="Livingroom" width="90"></td>
 <td><img src="assets/SceneMaker/livingroom/livingroom_normal_360.gif" alt="Normal Map" width="90"></td>
@@ -35,7 +35,7 @@
 </td>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/building_click/original_image.png" alt="Building" width="90"></td>
 <td><img src="assets/SceneMaker/building_click/building_click_normal_360.gif" alt="Normal Map" width="90"></td>
@@ -47,7 +47,7 @@
 <tr>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/idea3901_printer/original_image.png" alt="Printer" width="90"></td>
 <td><img src="assets/SceneMaker/idea3908/idea3908_normal_360.gif" alt="Normal Map" width="90"></td>
@@ -57,7 +57,7 @@
 </td>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/original_image.png" alt="Scene" width="90"></td>
 <td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/e108079799d746809f898619890b6606_normal_360.gif" alt="Normal Map" width="90"></td>
@@ -69,7 +69,7 @@
 <tr>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/lounge_click/original_image.png" alt="Lounge" width="90"></td>
 <td><img src="assets/SceneMaker/lounge_click/lounge_click_normal_360.gif" alt="Normal Map" width="90"></td>
@@ -79,7 +79,7 @@
 </td>
 <td align="center">
 <table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>Generated 3D Scene</th></tr>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
 <td><img src="assets/SceneMaker/street_click/original_image.png" alt="Street" width="90"></td>
 <td><img src="assets/SceneMaker/street_click/street_click_normal_360.gif" alt="Normal Map" width="90"></td>
