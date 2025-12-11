@@ -109,7 +109,7 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 
 ## Open Source Progress
 
-- ✅ **Dataset**: Released
+- ⏳ **Dataset**: Coming soon
 - ⏳ **Inference Code**: Coming soon
 - ⏳ **Training Code**: Coming soon
 
