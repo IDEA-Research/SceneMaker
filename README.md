@@ -27,9 +27,9 @@
 <table>
 <tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
-<td><img src="assets/SceneMaker/livingroom/original_image.png" alt="Livingroom" width="95"></td>
-<td><img src="assets/SceneMaker/livingroom/livingroom_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/livingroom/livingroom_360.gif" alt="3D Scene" width="95"></td>
+<td><img src="assets/SceneMaker/livingroom/original_image.png" alt="Livingroom" width="100"></td>
+<td><img src="assets/SceneMaker/livingroom/livingroom_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/livingroom/livingroom_360.gif" alt="3D Scene" width="100"></td>
 </tr>
 </table>
 </td>
@@ -37,31 +37,9 @@
 <table>
 <tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
-<td><img src="assets/SceneMaker/building_click/original_image.png" alt="Building" width="95"></td>
-<td><img src="assets/SceneMaker/building_click/building_click_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/building_click/building_click_360.gif" alt="3D Scene" width="95"></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td align="center">
-<table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
-<tr>
-<td><img src="assets/SceneMaker/idea3901_printer/original_image.png" alt="Printer" width="95"></td>
-<td><img src="assets/SceneMaker/idea3908/idea3908_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/idea3908/idea3908_360.gif" alt="3D Scene" width="95"></td>
-</tr>
-</table>
-</td>
-<td align="center">
-<table>
-<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
-<tr>
-<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/original_image.png" alt="Scene" width="95"></td>
-<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/e108079799d746809f898619890b6606_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/e108079799d746809f898619890b6606_360.gif" alt="3D Scene" width="95"></td>
+<td><img src="assets/SceneMaker/building_click/original_image.png" alt="Building" width="100"></td>
+<td><img src="assets/SceneMaker/building_click/building_click_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/building_click/building_click_360.gif" alt="3D Scene" width="100"></td>
 </tr>
 </table>
 </td>
@@ -71,9 +49,9 @@
 <table>
 <tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
-<td><img src="assets/SceneMaker/lounge_click/original_image.png" alt="Lounge" width="95"></td>
-<td><img src="assets/SceneMaker/lounge_click/lounge_click_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/lounge_click/lounge_click_360.gif" alt="3D Scene" width="95"></td>
+<td><img src="assets/SceneMaker/idea3901_printer/original_image.png" alt="Printer" width="100"></td>
+<td><img src="assets/SceneMaker/idea3908/idea3908_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/idea3908/idea3908_360.gif" alt="3D Scene" width="100"></td>
 </tr>
 </table>
 </td>
@@ -81,9 +59,31 @@
 <table>
 <tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
 <tr>
-<td><img src="assets/SceneMaker/street_click/original_image.png" alt="Street" width="95"></td>
-<td><img src="assets/SceneMaker/street_click/street_click_normal_360.gif" alt="Normal Map" width="95"></td>
-<td><img src="assets/SceneMaker/street_click/street_click_360.gif" alt="3D Scene" width="95"></td>
+<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/original_image.png" alt="Scene" width="100"></td>
+<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/e108079799d746809f898619890b6606_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/e108079799d746809f898619890b6606/e108079799d746809f898619890b6606_360.gif" alt="3D Scene" width="100"></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center">
+<table>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
+<tr>
+<td><img src="assets/SceneMaker/lounge_click/original_image.png" alt="Lounge" width="100"></td>
+<td><img src="assets/SceneMaker/lounge_click/lounge_click_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/lounge_click/lounge_click_360.gif" alt="3D Scene" width="100"></td>
+</tr>
+</table>
+</td>
+<td align="center">
+<table>
+<tr><th>Scene Image</th><th>Normal Map</th><th>3D Scene</th></tr>
+<tr>
+<td><img src="assets/SceneMaker/street_click/original_image.png" alt="Street" width="100"></td>
+<td><img src="assets/SceneMaker/street_click/street_click_normal_360.gif" alt="Normal Map" width="100"></td>
+<td><img src="assets/SceneMaker/street_click/street_click_360.gif" alt="3D Scene" width="100"></td>
 </tr>
 </table>
 </td>
