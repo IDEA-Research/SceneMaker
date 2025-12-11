@@ -17,7 +17,7 @@
   
   <!-- Author -->
   <body>
-  <div class="content" style="text-align: center; max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+  <div class="content" style="text-align: center; max-width: 1000px; margin: 0 auto; padding: 0 20px;">
     <div style="display: flex; justify-content: center; margin-bottom: -70px;">
       <img src="./src/img/SceneMaker_logo.png" alt="SceneMaker Logo" style="max-width: 500px; height: auto;">
     </div>
@@ -74,14 +74,16 @@
       </div>
   
       </div>
-  
     </font>
+    <br>
+
+    
   </div>
   
   
   
   <!-- datasets demo -->
-  <div class="content" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+  <div class="content" style="max-width: 1000px">
     <h3 style="text-align:center"><strong>Abstract</strong></h3>
     <p style="text-align: left; font-size: medium;">
       We propose a decoupled 3D scene generation framework called <strong>SceneMaker</strong> in this work. Due to the lack of sufficient open-set de-occlusion and pose estimation priors, existing methods struggle to simultaneously produce high-quality geometry and accurate poses under severe occlusion and open-set settings. To address these issues, we first decouple the de-occlusion model from 3D object generation, and enhance it by leveraging image datasets and collected de-occlusion datasets for much more diverse open-set occlusion patterns. Then, we propose a unified pose estimation model that integrates global and local mechanisms for both self-attention and cross-attention to improve accuracy. Besides, we construct an open-set 3D scene dataset to further extend the generalization of the pose estimation model. Comprehensive experiments demonstrate the superiority of our decoupled framework on both indoor and open-set scenes. Our codes and datasets will be released.
@@ -230,12 +232,12 @@
   
   
     </div>
-  </div>
+  </div><br>
   
   
   
   <!-- pipeline -->
-  <div class="content" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+  <div class="content" style="max-width: 1000px">
     <h3 style="text-align:center"><strong>Framework</strong></h3>
     <p style="text-align: center; font-size: medium;">
       Our framework consists of scene perception, 3D object generation under occlusion, and pose estimation. We decouple the de-occlusion model from 3D object generation. <br>We construct a unified pose estimation model that incorporates both global and local attention mechanisms. 
@@ -249,13 +251,13 @@
   
     <br>
   
-  </div>
+  </div><br>
   
 
 
 
   <!-- datasets comparison -->
-  <div class="content" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+  <div class="content" style="max-width: 1000px">
     <h3 style="text-align:center"><strong>Qualitative Comparison of Object Generation under Occlusion</strong></h3>
     <p style="text-align: center; font-size: medium;">
       We decouple and develop a robust de-occlusion model by leveraging image datasets for open-set occlusion prior. Our model achieves<br> higher quality and more text-controllable results under severe occlusion and open-set conditions.
@@ -267,15 +269,15 @@
     </div>
     <br>
   
-  </div>
+  </div><br>
 
 
 
+  
+  
   <!-- generation results -->
-  <div class="content" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-    <h3 style="text-align:center"><strong>Qualitative Comparison on Scene Generation</strong></h3>
-    
-    <!-- Comparison Grid: 6 cases, each in a box with 5 columns -->
+  <div class="content" style="max-width: 1000px">
+    <h3 style="text-align:center"><strong>Qualitative Comparison on Scene Generation</strong></h3>    <!-- Comparison Grid: 6 cases, each in a box with 5 columns -->
     <div style="display: grid; grid-template-columns: 1fr; gap: 30px; margin-top: 30px;">
       
       <!-- Case 1 -->
@@ -465,12 +467,13 @@
 
     <br>
   
-  </div>
+  </div><br>
 
 
 
   <!-- citation -->
   <div class="content" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+    <br>
     <h3 style="text-align:center"><strong>Citation</strong></h3>
   
     <pre><code></code></pre>
