@@ -16,7 +16,7 @@
 <div align="center">
 
 [![Paper](https://img.shields.io/badge/arXiv-2410.08260-b31b1b.svg)](https://github.com/IDEA-Research/SceneMaker)
-[![Datasets](https://img.shields.io/badge/🤗-Datasets-yellow.svg)](https://github.com/IDEA-Research/SceneMaker)
+[![Datasets](https://img.shields.io/badge/🤗-Datasets-yellow.svg)](https://huggingface.co/datasets/LightillusionsLab/SceneMaker)
 [![Code](https://img.shields.io/badge/GitHub-Code-black.svg)](https://github.com/IDEA-Research/SceneMaker)
 
 </div>
@@ -109,7 +109,7 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 
 ## Open Source Progress
 
-- ⏳ **Dataset**: Coming soon
+- 🔄 **Dataset**: Uploading
 - ⏳ **Inference Code**: Coming soon
 - ⏳ **Training Code**: Coming soon
 
@@ -122,3 +122,22 @@ If you find our work useful in your research, please consider citing:
 @article{
 }
 ```
+
+## Acknowledgement
+
+We would like to thank the authors of the following projects for their excellent work and open-source contributions:
+
+- [MoGe](https://github.com/microsoft/MoGe) - Monocular depth estimation
+- [SAM](https://github.com/facebookresearch/segment-anything) - Segment Anything Model for image segmentation
+- [DINO-X](https://cloud.deepdataspace.com/zh/playground/dino-x) - Grounding segementation
+- [CraftsMan](https://github.com/wyysf-98/CraftsMan) - 3D object generation
+- [Step1x-3D](https://github.com/stepfun-ai/Step1X-3D) - 3D object generation
+- [Hunyuan3D](https://github.com/tencent-hunyuan/hunyuan3d-2.1) - 3D object generation
+- [MIDI3D](https://github.com/VAST-AI-Research/MIDI-3D) - Multi-instance 3D scene generation
+- [InstPIFu](https://github.com/GAP-LAB-CUHK-SZ/InstPIFu) - Instance-based pixel-aligned implicit function
+
+Their contributions have been invaluable to the development of SceneMaker.
+
+## License
+
+See [LICENSE](LICENSE) file for details.
