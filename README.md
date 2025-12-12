@@ -15,7 +15,9 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://github.com/IDEA-Research/SceneMaker)
+
+[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/2512.10957)
+[![Project Page](https://img.shields.io/badge/🌐-Project%20Page-blue)](https://idea-research.github.io/SceneMaker/)
 [![Datasets](https://img.shields.io/badge/🤗-Datasets-yellow.svg)](https://huggingface.co/datasets/LightillusionsLab/SceneMaker)
 [![Code](https://img.shields.io/badge/GitHub-Code-black.svg)](https://github.com/IDEA-Research/SceneMaker)
 
