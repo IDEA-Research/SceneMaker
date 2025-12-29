@@ -111,7 +111,7 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 
 ## Open Source Progress
 
-- 🔄 **Dataset**: Uploading
+- ✅ **Dataset**: Available
 - ⏳ **Inference Code**: Coming soon
 - ⏳ **Training Code**: Coming soon
 
@@ -121,7 +121,11 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@article{
+@article{shi2025scenemaker,
+  title={SceneMaker: Open-set 3D Scene Generation with Decoupled De-occlusion and Pose Estimation Model},
+  author={Shi, Yukai and Li, Weiyu and Wang, Zihao and Li, Hongyang and Chen, Xingyu and Tan, Ping and Zhang, Lei},
+  journal={arXiv preprint arXiv:2512.10957},
+  year={2025}
 }
 ```
 
