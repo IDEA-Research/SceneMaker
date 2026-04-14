@@ -121,18 +121,23 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 
 ## 🛠️ Installation
 
-Install Python dependencies:
+1. Install Python dependencies for python 3.10:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Install MoGe for depth estimation:
+2. Install MoGe for depth estimation:
 
 - MoGe repo: https://github.com/microsoft/MoGe
 - Please follow the official MoGe repository instructions for installation.
 
-Download checkpoints from Hugging Face, and place in the corresponding folders ( `ckpts/` ):
+3. Install Step1x-3D for 3D obejct generation:
+```bash
+git clone --depth 1 --branch main https://github.com/stepfun-ai/Step1X-3D.git
+```
+
+4. Download checkpoints from Hugging Face, and place in the corresponding folders ( `ckpts/` ):
 
 - SceneMaker checkpoints: https://huggingface.co/horizon171852/SceneMakerSceneMaker
 
