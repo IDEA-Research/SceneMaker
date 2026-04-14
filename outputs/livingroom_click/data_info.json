@@ -1,0 +1,138 @@
+{
+  "image_file": "original_image.png",
+  "detections_file": "detections.txt",
+  "total_pairs": 6,
+  "save_time": "2025-11-14 22:12:01",
+  "directory_structure": {
+    "masks": "masks/",
+    "masked_images": "masked_images/"
+  },
+  "data_pairs": [
+    {
+      "id": 1,
+      "caption": "sofa",
+      "mask_file": "masks/mask_0_sofa.png",
+      "masked_image_file": "masked_images/masked_image_0_sofa.png",
+      "points": [
+        [
+          279,
+          291
+        ],
+        [
+          247,
+          264
+        ],
+        [
+          370,
+          255
+        ],
+        [
+          442,
+          295
+        ],
+        [
+          293,
+          252
+        ],
+        [
+          216,
+          241
+        ],
+        [
+          192,
+          294
+        ],
+        [
+          266,
+          337
+        ]
+      ],
+      "timestamp": "2025-11-14 22:10:52"
+    },
+    {
+      "id": 2,
+      "caption": "lamp",
+      "mask_file": "masks/mask_1_lamp.png",
+      "masked_image_file": "masked_images/masked_image_1_lamp.png",
+      "points": [
+        [
+          120,
+          241
+        ],
+        [
+          118,
+          323
+        ]
+      ],
+      "timestamp": "2025-11-14 22:11:00"
+    },
+    {
+      "id": 3,
+      "caption": "chair",
+      "mask_file": "masks/mask_2_chair.png",
+      "masked_image_file": "masked_images/masked_image_2_chair.png",
+      "points": [
+        [
+          627,
+          304
+        ],
+        [
+          624,
+          339
+        ],
+        [
+          660,
+          269
+        ]
+      ],
+      "timestamp": "2025-11-14 22:11:09"
+    },
+    {
+      "id": 4,
+      "caption": "table",
+      "mask_file": "masks/mask_3_table.png",
+      "masked_image_file": "masked_images/masked_image_3_table.png",
+      "points": [
+        [
+          490,
+          327
+        ]
+      ],
+      "timestamp": "2025-11-14 22:11:18"
+    },
+    {
+      "id": 5,
+      "caption": "bonsai",
+      "mask_file": "masks/mask_4_bonsai.png",
+      "masked_image_file": "masked_images/masked_image_4_bonsai.png",
+      "points": [
+        [
+          526,
+          225
+        ],
+        [
+          528,
+          262
+        ]
+      ],
+      "timestamp": "2025-11-14 22:11:29"
+    },
+    {
+      "id": 6,
+      "caption": "painting",
+      "mask_file": "masks/mask_5_painting.png",
+      "masked_image_file": "masked_images/masked_image_5_painting.png",
+      "points": [
+        [
+          320,
+          163
+        ],
+        [
+          286,
+          146
+        ]
+      ],
+      "timestamp": "2025-11-14 22:11:38"
+    }
+  ]
+}

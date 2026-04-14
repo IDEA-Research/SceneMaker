@@ -109,11 +109,60 @@ We decouple the de-occlusion model from 3D object generation. We construct a uni
 
 ![Framework](assets/imgs/pipeline.png)
 
-## Open Source Progress
+## 🚀 Open Source Progress
 
 - ✅ **Dataset**: Available
-- ⏳ **Inference Code**: Coming soon
-- ⏳ **Training Code**: Coming soon
+- ✅ **Inference Code**: Released
+- ✅ **Training Code**: Released
+
+> **Note**
+> The open-source release uses **FLUX Kontext** as the de-occlusion model and **Step1X-3D** as the 3D generation model.
+> This is a bit different from the exact implementation described in the paper.
+
+## 🛠️ Installation
+
+Install Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Install MoGe for depth estimation:
+
+- MoGe repo: https://github.com/microsoft/MoGe
+- Please follow the official MoGe repository instructions for installation.
+
+Download checkpoints from Hugging Face, and place in the corresponding folders ( `ckpts/` ):
+
+- SceneMaker checkpoints: https://huggingface.co/datasets/LightillusionsLab/SceneMaker
+
+## 🎬 Demo (Segmentation + De-occlusion + 3D object generation + Pose estimation)
+
+```bash
+bash run_gradio.sh
+```
+
+## 🎯 Single Pose Estimation
+
+Select corresponding checkpoints (indoor / open-set), and run scripts:
+
+```bash
+bash run_generation.sh
+```
+
+## 🏋️ Training
+
+Download required datasets:
+
+- InstPIFu: https://github.com/GAP-LAB-CUHK-SZ/InstPIFu
+- MIDI-3D: https://github.com/VAST-AI-Research/MIDI-3D
+- SceneMaker OpenSet Dataset: https://huggingface.co/horizon171852/SceneMaker
+
+Select config in `configs/image-to-scene-diffusion` and Run scripts:
+
+```bash
+bash run_train.sh
+```
 
 
 ## Citation

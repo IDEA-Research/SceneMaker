@@ -1,0 +1,4 @@
+car
+box
+sword
+doll

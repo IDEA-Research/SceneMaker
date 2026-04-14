@@ -1,0 +1,6 @@
+sofa
+lamp
+chair
+table
+bonsai
+painting

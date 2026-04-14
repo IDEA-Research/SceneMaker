@@ -1,0 +1,231 @@
+exp_root_dir: "outputs"
+name: "image-to-pose-diffusion/midi-dinov2reglarge336-PatchEmbed-pixartflow-sharpvae-dit32-160wdata-width1280-rectify-size+6Drotation+pose-direct"
+tag: "${rmspace:${system.shape_model_type}+n${data.n_samples}+lr${system.optimizer.args.lr}+shape2vec-pcd+${system.denoiser_model.attn_mode}-attn+${system.denoiser_model.block_mode}-block+${data.translation_mode}-mode+lambda-rot-${system.lambda_rot}+lambda-trans-${system.lambda_trans}+proj-mode-${system.denoiser_model.proj_mode}+loss-mode-${system.loss_mode}+cosmap+scene-img+scene-pcd+scene-mask-img+only-pitch-${data.only_use_pitch}+mixed-coord-${data.use_mix_coord}+${data.render_mode}-mode,_}"
+seed: 0
+# resume: outputs/image-to-pose-diffusion/dinov2reglarge336-PatchEmbed-pixartflow-sharpvae-dit32-160wdata-width1280-rectify-size+6Drotation+unify/michelangelo-autoencoder+n16384+lr0.0001+pose-LN-affine+shape2vec-pcd+object-attn+trans-block+gt-mode+lambda-rot-1+sup-latents-False+proj-mode-sep+loss-mode-object+init+mlp+cosmap+shift1.0/ckpts/epoch=28-step=10000.ckpt
+
+data_type: "Front3D-midi-datamodule"
+data:
+  scene_list: "/comp_robot/shiyukai/datasets/midi/3D-Front/midi_room_ids.json"
+  object_list: "/comp_robot/shiyukai/datasets/midi/3D-Front/midi_furniture_ids.json"
+  surface_root_dir: "/comp_robot/shiyukai/datasets/midi/3D-Front/3D-FRONT-SURFACE/"
+  image_data_path: "/comp_robot/shiyukai/datasets/midi/3D-Front/3D-FRONT-RENDER/"
+  mask_path: "/comp_robot/shiyukai/datasets/midi/3D-Front/3D-FRONT-RENDER-independent-norm/"
+  geo_data_path: "/comp_robot/shiyukai/datasets/instPiFU/datasets/normalized_watertight/sampling_objects"
+
+  train_indices: [0, -1000]
+  val_indices: [-1010, -990]
+  test_indices: [-1000, null]
+
+  geo_data_type: "sdf" 
+  with_sharp_data: True
+  sampling_strategy: null
+  n_samples: 16384
+  noise_sigma: 0.
+  random_flip: True # whether to randomly flip the input mesh
+  random_color_jitter: True # whether to add random color jitter to the input images
+  shuffle: True
+
+  load_supervision: False
+  supervision_type: "sdf" 
+  n_supervision: 10000
+
+  load_image: True              # whether to load images 
+  image_type: "rgb_or_normal"     # rgb, rgb_clip, rgb_dinov2, normal, normal_clip, normal_dinov2
+  image_type_ratio: 0.95          # ratio of rgb for each dataset when image_type is "rgb_or_normal"
+  idx: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]        # front view
+  n_views: 1
+  background_color: [255, 255, 255]
+  images_per_sample: 1
+
+  # scene
+  max_objs: 5
+  min_pcd: 1024
+  translation_mode: "pcd2_aug"  # "pcd2", "pcd", "aug", "gt"
+  refine_mask: false
+  use_scene_geometry: false
+  only_use_pitch: true
+  use_mix_coord: true
+  image_width: 512
+  image_height: 512
+  render_mode: render
+
+  batch_size: 8
+  num_workers: 8
+
+system_type: "direct-unify-flow-system"
+system:
+  # pretrained_model_name_or_path: ckpts/pose/rectify_obj_pcd2_sep_both_direct/model.bin
+  val_samples_json: "val_data/images/val_samples_rgb_image.json"
+  z_scale_factor: 1.0
+  guidance_scale: 3.0
+  num_inference_steps: 50
+  eta: 0.0
+  compute_metric: true
+  visualize_mesh: true
+  extract_mesh_func: mc
+  remove_bg: true
+  octree_depth: 5
+  max_objs: ${data.max_objs}
+  weighting_scheme: "cosmap"
+  pretrain_pcd: "shape2vec"
+  lambda_rot: 1
+  lambda_trans: 1
+  lambda_kl: 0.00
+  lambda_cd: 0.0
+  sup_latents: false
+  loss_mode: "object" # "scene", "object"
+  use_scene_img: true
+  use_scene_mask: false
+  use_scene_mask_rectify: false
+  use_scene_mask_img: true
+  use_scene_pcd: true
+  use_caption: false
+  freeze_pose_enc: false
+  freeze_pcd_model: true
+
+  shape_model_type: michelangelo-autoencoder
+  shape_model:
+    pretrained_model_name_or_path: ckpts/new-sharp-msvae-2048-tokens.ckpt
+    n_samples: ${data.n_samples}
+    with_sharp_data: ${data.with_sharp_data}
+    use_downsample: true
+    num_latents: 512
+    embed_dim: 64
+    point_feats: 3
+    out_dim: 1
+    num_freqs: 8
+    include_pi: false
+    heads: 12
+    width: 768
+    num_encoder_layers: 8
+    num_decoder_layers: 16
+    use_ln_post: true
+    init_scale: 0.25
+    qkv_bias: false
+    use_flash: true
+    use_checkpoint: true
+
+
+  pose_model_type: pose-ae
+  pose_model:
+    in_dim: 6
+    out_dim: ${system.pose_model.in_dim}
+    embed_dim: ${system.shape_model.embed_dim}
+    embed_type: "fourier"
+    num_latents: ${data.max_objs}
+    include_pi: False
+    init_scale: 0.25
+    enable_ln_affine: true
+    context_dim: ${system.denoiser_model.context_dim}
+    enable_translation: true
+    num_tokens: 3
+
+  pcd_model_type: shape2vectset-autoencoder
+  pcd_model:
+    pretrained_model_name_or_path: "ckpts/3Dvec2sets-checkpoint-199.pth"
+    num_latents: 512
+    embed_dim: 8
+    use_fps: true
+
+  condition_model_type: "dinov2-embedder"
+  condition_model:
+    pretrained_dino_name_or_path: facebook/dinov2-with-registers-large
+    encode_camera: false
+    n_views: ${data.n_views}
+    empty_embeds_ratio: 0.0
+    normalize_embeds: false
+    zero_uncond_embeds: true
+    image_size_dino: 224
+  
+  caption_condition_type: "t5-encoder"
+  caption_condition:
+    pretrained_t5_name_or_path: google-t5/t5-small # 512
+    # pretrained_t5_name_or_path: /mnt/jfs/cache/huggingface/hub/models--google-t5--t5-base/snapshots/a9723ea7f1b39c1eae772870f3b547bf6ef7e6c1 # 768
+    empty_embeds_ratio: 0.1
+    normalize_embeds: false
+    zero_uncond_embeds: true
+    caption_condition_dim: 512
+    text_max_length: 77
+
+  denoiser_model_type: "dit-pose-denoiser"
+  denoiser_model:
+    # pretrained_model_name_or_path: outputs/image-to-pose-diffusion/dinov2reglarge336-PatchEmbed-pixartflow-sharpvae-dit32-160wdata-width1280-rectify-size+6Drotation+unify/michelangelo-autoencoder+n16384+lr0.0001+pose-LN-affine+shape2vec-pcd+object-attn+trans-block+gt-mode+lambda-rot-1+sup-latents-False+proj-mode-sep+loss-mode-object+init+mlp+cosmap+shift1.0/ckpts/epoch=28-step=10000.ckpt/pytorch_model.bin
+    input_channels: ${system.shape_model.embed_dim}
+    output_channels:  ${system.shape_model.embed_dim}
+    width: 1024
+    layers: 16 # 2 * 6 + 1 = 13
+    pre_heads: 16
+    curr_heads: 16
+    context_dim: 1024
+    init_scale: 1.0
+    use_checkpoint: true
+    condition_type: "dinov2"
+    use_rope: true
+    use_pe: false
+    use_caption: ${system.use_caption}
+    num_shape_latents: ${system.shape_model.num_latents}
+    num_pose_latents: ${system.pose_model.num_tokens}
+    num_pcd_latents: ${system.pcd_model.num_latents}
+    num_img_latents: 257
+    num_text_latents: ${system.caption_condition.text_max_length}
+    attn_mode: "scene" # scene object
+    block_mode: "sep_both" # full sep trans trans2 sep_both
+    proj_mode: "sep" # full sep linear
+    
+
+  noise_scheduler_type: "diffusers.schedulers.FlowMatchEulerDiscreteScheduler"
+  noise_scheduler:
+    num_train_timesteps: 1000
+    shift: 1.0
+    
+  denoise_scheduler_type: "diffusers.schedulers.FlowMatchEulerDiscreteScheduler"
+  denoise_scheduler:
+    num_train_timesteps: 1000
+    shift: 1.0
+
+  loggers:
+    wandb:
+      enable: false
+      project: "CraftsMan"
+      name: image-to-shape-diffusion+${name}+${tag}
+
+  loss:
+    loss_type: "mse"
+    lambda_diffusion: 1.
+
+  optimizer:
+    name: AdamW
+    args:
+      lr: 1.e-4 # 1.e-5
+      betas: [0.9, 0.99]
+      eps: 1.e-6
+      # lr: 1e-5
+      # betas: [0.9, 0.999]
+      # weight_decay: 0.01
+
+  scheduler:
+    interval: "step"
+    name: CosineAnnealingLR
+    args:
+      T_max: 20000
+      eta_min: 1.e-4
+
+trainer:
+  num_nodes: 1
+  max_epochs: 600
+  log_every_n_steps: 5
+  num_sanity_val_steps: 1
+  # val_check_interval: 300
+  check_val_every_n_epoch: 3
+  enable_progress_bar: true
+  precision: bf16-mixed
+  strategy: 'deepspeed_stage_2'
+  # strategy: 'ddp_find_unused_parameters_true'
+  accumulate_grad_batches: 1
+
+checkpoint:
+  save_last: true
+  save_top_k: -1
+  every_n_train_steps: 2000
+

@@ -1,0 +1,92 @@
+{
+  "image_file": "original_image.png",
+  "detections_file": "detections.txt",
+  "total_pairs": 4,
+  "save_time": "2025-10-27 17:49:29",
+  "directory_structure": {
+    "masks": "masks/",
+    "masked_images": "masked_images/"
+  },
+  "data_pairs": [
+    {
+      "id": 1,
+      "caption": "car",
+      "mask_file": "masks/mask_0_car.png",
+      "masked_image_file": "masked_images/masked_image_0_car.png",
+      "points": [
+        [
+          400,
+          247
+        ],
+        [
+          367,
+          249
+        ],
+        [
+          380,
+          267
+        ]
+      ],
+      "timestamp": "2025-10-27 17:48:11"
+    },
+    {
+      "id": 2,
+      "caption": "box",
+      "mask_file": "masks/mask_1_box.png",
+      "masked_image_file": "masked_images/masked_image_1_box.png",
+      "points": [
+        [
+          224,
+          316
+        ],
+        [
+          222,
+          368
+        ],
+        [
+          305,
+          377
+        ]
+      ],
+      "timestamp": "2025-10-27 17:48:44"
+    },
+    {
+      "id": 3,
+      "caption": "sword",
+      "mask_file": "masks/mask_2_sword.png",
+      "masked_image_file": "masked_images/masked_image_2_sword.png",
+      "points": [
+        [
+          302,
+          363
+        ],
+        [
+          301,
+          414
+        ]
+      ],
+      "timestamp": "2025-10-27 17:49:01"
+    },
+    {
+      "id": 4,
+      "caption": "doll",
+      "mask_file": "masks/mask_3_doll.png",
+      "masked_image_file": "masked_images/masked_image_3_doll.png",
+      "points": [
+        [
+          454,
+          281
+        ],
+        [
+          468,
+          343
+        ],
+        [
+          427,
+          404
+        ]
+      ],
+      "timestamp": "2025-10-27 17:49:16"
+    }
+  ]
+}
