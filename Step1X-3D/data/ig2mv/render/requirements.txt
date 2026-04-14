@@ -1,0 +1,8 @@
+boto3==1.38.32
+bpy==4.0.0
+imageio==2.37.0
+mathutils==3.3.0
+megfile==4.1.7
+numpy=2.2.6
+opencv_python==4.11.0.86
+Pillow==11.2.1

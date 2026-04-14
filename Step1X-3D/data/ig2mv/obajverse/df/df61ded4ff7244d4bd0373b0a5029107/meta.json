@@ -1,0 +1,484 @@
+{
+  "locations": [
+    {
+      "index": "0000",
+      "transform_matrix": [
+        [
+          1.0,
+          0.0,
+          6.123233601181349e-17,
+          6.123234262925839e-17
+        ],
+        [
+          6.123233601181349e-17,
+          3.422854177870249e-08,
+          -0.9999999403953552,
+          -1.0
+        ],
+        [
+          0.0,
+          0.9999999403953552,
+          3.422854177870249e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0000.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0000.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0000.exr"
+        }
+      ]
+    },
+    {
+      "index": "0001",
+      "transform_matrix": [
+        [
+          1.1920928244535389e-07,
+          0.0,
+          0.9999998807907104,
+          1.0
+        ],
+        [
+          0.9999998807907104,
+          1.1920928244535389e-07,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999998807907104,
+          1.1920928244535389e-07,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0001.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0001.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0001.exr"
+        }
+      ]
+    },
+    {
+      "index": "0002",
+      "transform_matrix": [
+        [
+          -0.9999999403953552,
+          8.742277657347586e-08,
+          0.0,
+          6.123234262925839e-17
+        ],
+        [
+          0.0,
+          3.4228538225988814e-08,
+          0.9999999403953552,
+          1.0
+        ],
+        [
+          8.742277657347586e-08,
+          0.9999999403953552,
+          3.4228538225988814e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0002.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0002.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0002.exr"
+        }
+      ]
+    },
+    {
+      "index": "0003",
+      "transform_matrix": [
+        [
+          5.9604641222676946e-08,
+          0.0,
+          -0.9999999403953552,
+          -1.0
+        ],
+        [
+          -0.9999999403953552,
+          1.1920928244535389e-07,
+          0.0,
+          1.2246468525851679e-16
+        ],
+        [
+          5.9604641222676946e-08,
+          0.9999999403953552,
+          5.9604641222676946e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0003.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0003.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0003.exr"
+        }
+      ]
+    },
+    {
+      "index": "0004",
+      "transform_matrix": [
+        [
+          0.7071068286895752,
+          -8.455803168772036e-08,
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        [
+          0.7071067690849304,
+          -1.0813396755793292e-07,
+          -0.7071067690849304,
+          -0.7071067690849304
+        ],
+        [
+          1.490736281084537e-07,
+          1.0,
+          -1.1360569374119223e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0004.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0004.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0004.exr"
+        }
+      ]
+    },
+    {
+      "index": "0005",
+      "transform_matrix": [
+        [
+          0.7071068286895752,
+          8.455803168772036e-08,
+          -0.7071067690849304,
+          -0.7071067690849304
+        ],
+        [
+          -0.7071067690849304,
+          -1.0813396755793292e-07,
+          -0.7071067690849304,
+          -0.7071067690849304
+        ],
+        [
+          -1.490736281084537e-07,
+          1.0,
+          -1.1360569374119223e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0005.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0005.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0005.exr"
+        }
+      ]
+    },
+    {
+      "index": "0006",
+      "transform_matrix": [
+        [
+          1.0,
+          -5.302875905192904e-17,
+          3.0616168005906746e-17,
+          3.0616171314629196e-17
+        ],
+        [
+          6.123233601181349e-17,
+          0.8660253882408142,
+          -0.5,
+          -0.5
+        ],
+        [
+          -5.856755795850462e-25,
+          0.5,
+          0.8660253882408142,
+          0.8660253882408142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0006.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0006.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0006.exr"
+        }
+      ]
+    },
+    {
+      "index": "0007",
+      "transform_matrix": [
+        [
+          1.0,
+          5.302876897809639e-17,
+          3.0616174623351647e-17,
+          3.0616171314629196e-17
+        ],
+        [
+          6.123234924670329e-17,
+          -0.8660253286361694,
+          -0.5000000596046448,
+          -0.5
+        ],
+        [
+          -4.602451179330949e-24,
+          0.5000000596046448,
+          -0.8660253286361694,
+          -0.8660253882408142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0007.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0007.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0007.exr"
+        }
+      ]
+    },
+    {
+      "index": "0008",
+      "transform_matrix": [
+        [
+          -0.9999999403953552,
+          8.742277657347586e-08,
+          -7.408840488538123e-16,
+          3.0616171314629196e-17
+        ],
+        [
+          -7.571034643660823e-08,
+          -0.8660253286361694,
+          0.5,
+          0.5
+        ],
+        [
+          4.371138828673793e-08,
+          0.5,
+          0.8660253882408142,
+          0.8660253882408142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0008.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0008.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0008.exr"
+        }
+      ]
+    },
+    {
+      "index": "0009",
+      "transform_matrix": [
+        [
+          -0.9999999403953552,
+          8.742277657347586e-08,
+          -5.2073984704924074e-15,
+          3.0616171314629196e-17
+        ],
+        [
+          7.571034643660823e-08,
+          0.866025447845459,
+          0.4999999403953552,
+          0.5
+        ],
+        [
+          4.371138828673793e-08,
+          0.4999999403953552,
+          -0.8660253286361694,
+          -0.8660253882408142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection_type": "ORTHO",
+      "ortho_scale": 1.1,
+      "environment_map": "./suburban_field_01/suburban_field_01_1k.hdr",
+      "environment_map_rotation_deg": 17.378548448963222,
+      "light_strength": 1.5808111201589432,
+      "frames": [
+        {
+          "type": "Color",
+          "name": "color_0009.webp"
+        },
+        {
+          "type": "Normal",
+          "name": "normal_0009.webp"
+        },
+        {
+          "type": "Depth",
+          "name": "depth_0009.exr"
+        }
+      ]
+    }
+  ]
+}

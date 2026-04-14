@@ -1,0 +1,90 @@
+exp_root_dir: "outputs"
+name: "step1x-3d-geometry-vae/michelangelo"
+tag: "${rmspace:n${data.n_samples}+kl${system.loss.lambda_kl}+lr${system.optimizer.args.lr},_}"
+seed: 0
+
+data_type: "Objaverse-datamodule"
+data:
+  root_dir: "./data/shape_autoencoder/objaverse"
+
+  load_geometry: True                # whether to load geometry
+  load_geometry_supervision: True    # whether to load geometry supervision
+  geo_data_type: "sdf" 
+  with_sharp_data: False             # original objaverse data
+  n_samples: 32768
+  noise_sigma: 0.
+  random_flip: True # whether to randomly flip the input mesh
+  random_color_jitter: True # whether to add random color jitter to the input images
+  random_rotate: True # whether to add random rotation to the input images
+
+  load_image: False                # whether to load images 
+  load_caption: False              # whether to load captions 
+  load_label: False                # whether to load labels
+
+  batch_size: 1 # TODO: change this for your own dataset
+  num_workers: 1 # change this for your own dataset
+
+
+system_type: "shape-autoencoder-system"
+system:
+  sample_posterior: true
+  bounds: 1.05
+  mc_level: 0.0
+  octree_resolution: 256
+
+  shape_model_type: "michelangelo-autoencoder"
+  shape_model:
+    n_samples: ${data.n_samples}
+    with_sharp_data: ${data.with_sharp_data} # dora config
+    use_downsample: true
+    num_latents: 1024
+    embed_dim: 64
+    point_feats: 3
+    out_dim: 1 # tsdf(1)
+    num_freqs: 8
+    include_pi: false
+    heads: 12
+    width: 768
+    num_encoder_layers: 8
+    num_decoder_layers: 16
+    use_ln_post: true
+    init_scale: 0.25
+    qkv_bias: false
+    use_flash: true
+    use_checkpoint: false
+
+    volume_decoder_type: 'hierarchical'
+    # volume_decoder_type: str = 'vanilla'
+    surface_extractor_type: 'mc'
+
+  loggers:
+    wandb:
+      enable: false
+      project: "step1x-3d"
+      name: shape-autoencoder+${name}+${tag}
+
+  loss:
+    lambda_kl: 0.001
+    lambda_logits: 1.
+
+  optimizer:
+    name: AdamW
+    args:
+      lr: 1.e-5
+      betas: [0.9, 0.99]
+      eps: 1.e-6
+
+trainer:
+  num_nodes: 1
+  max_epochs: 10
+  log_every_n_steps: 5
+  num_sanity_val_steps: 1
+  check_val_every_n_epoch: 1
+  enable_progress_bar: true
+  precision: 32
+  # precision: bf16-mixed
+
+checkpoint:
+  save_last: true
+  save_top_k: -1
+  every_n_train_steps: 5000

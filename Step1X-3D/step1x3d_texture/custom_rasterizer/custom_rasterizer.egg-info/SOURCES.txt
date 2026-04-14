@@ -1,0 +1,12 @@
+setup.py
+./custom_rasterizer/__init__.py
+./custom_rasterizer/io_glb.py
+./custom_rasterizer/io_obj.py
+./custom_rasterizer/render.py
+custom_rasterizer.egg-info/PKG-INFO
+custom_rasterizer.egg-info/SOURCES.txt
+custom_rasterizer.egg-info/dependency_links.txt
+custom_rasterizer.egg-info/top_level.txt
+lib/custom_rasterizer_kernel/grid_neighbor.cpp
+lib/custom_rasterizer_kernel/rasterizer.cpp
+lib/custom_rasterizer_kernel/rasterizer_gpu.cu

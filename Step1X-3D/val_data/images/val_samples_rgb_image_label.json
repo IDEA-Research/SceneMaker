@@ -1,0 +1,15 @@
+{
+    "image": [
+        "val_data/images/werewolf.png",
+        "val_data/images/werewolf.png",
+        "val_data/images/werewolf.png",
+        "val_data/images/werewolf.png"
+    ],
+    
+    "label": [
+        {"symmetry": "asymmetry", "geometry_type": "smooth"},
+        {"symmetry": "asymmetry", "geometry_type": "normal"},
+        {"symmetry": "asymmetry", "geometry_type": "sharp"},
+        {"symmetry": "x", "geometry_type": "normal"}
+    ]
+}

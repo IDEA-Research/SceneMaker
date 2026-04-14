@@ -1,0 +1,5 @@
+# ninja log v5
+5	49931	1765531187000000000	/comp_robot/shiyukai/CraftsMan_scaleup/SceneMaker/Step1X-3D/step1x3d_texture/custom_rasterizer/build/temp.linux-x86_64-cpython-310/lib/custom_rasterizer_kernel/grid_neighbor.o	b0608e10ba8653b6
+7	50220	1765531188000000000	/comp_robot/shiyukai/CraftsMan_scaleup/SceneMaker/Step1X-3D/step1x3d_texture/custom_rasterizer/build/temp.linux-x86_64-cpython-310/lib/custom_rasterizer_kernel/rasterizer.o	8a786f04e4199775
+9	97071	1765531234000000000	/comp_robot/shiyukai/CraftsMan_scaleup/SceneMaker/Step1X-3D/step1x3d_texture/custom_rasterizer/build/temp.linux-x86_64-cpython-310/lib/custom_rasterizer_kernel/rasterizer_gpu.o	11a7b623e0b0427
+3943	64878	1765875641000000000	/comp_robot/shiyukai/CraftsMan_scaleup/SceneMaker/Step1X-3D/step1x3d_texture/custom_rasterizer/build/temp.linux-x86_64-cpython-310/lib/custom_rasterizer_kernel/rasterizer_gpu.o	16a9eff783bc0e89
