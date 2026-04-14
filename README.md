@@ -1,10 +1,10 @@
+<div align="center">
+
+<img src="assets/imgs/SceneMaker_logo.png" alt="SceneMaker Logo" width="250">
+
+</div>
+
 # SceneMaker: Open-set 3D Scene Generation with Decoupled De-occlusion and Pose Estimation Model
-
-<!-- <div align="center">
-
-<img src="./src/img/SceneMaker_logo.png" alt="SceneMaker Logo" width="250">
-
-</div> -->
 
 **Yukai Shi<sup>1,3</sup>**, **Weiyu Li<sup>2,4</sup>**, **Zihao Wang<sup>4</sup>**, **Hongyang Li<sup>3</sup>**, **Xingyu Chen<sup>3</sup>**, **Ping Tan<sup>2,4</sup>**, **Lei Zhang<sup>3</sup>**
 
