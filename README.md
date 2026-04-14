@@ -134,7 +134,7 @@ Install MoGe for depth estimation:
 
 Download checkpoints from Hugging Face, and place in the corresponding folders ( `ckpts/` ):
 
-- SceneMaker checkpoints: https://huggingface.co/datasets/LightillusionsLab/SceneMaker
+- SceneMaker checkpoints: https://huggingface.co/horizon171852/SceneMakerSceneMaker
 
 ## 🎬 Demo (Segmentation + De-occlusion + 3D object generation + Pose estimation)
 
@@ -156,7 +156,7 @@ Download required datasets:
 
 - InstPIFu: https://github.com/GAP-LAB-CUHK-SZ/InstPIFu
 - MIDI-3D: https://github.com/VAST-AI-Research/MIDI-3D
-- SceneMaker OpenSet Dataset: https://huggingface.co/horizon171852/SceneMaker
+- SceneMaker OpenSet Dataset: https://huggingface.co/datasets/LightillusionsLab/
 
 Select config in `configs/image-to-scene-diffusion` and Run scripts:
 
