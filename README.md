@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/imgs/SceneMaker_logo.png" alt="SceneMaker Logo" width="250">
+<img src="assets/imgs/SceneMaker_logo.png" alt="SceneMaker Logo" width="400">
 
 </div>
 
