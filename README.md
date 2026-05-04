@@ -139,7 +139,7 @@ git clone --depth 1 --branch main https://github.com/stepfun-ai/Step1X-3D.git
 
 4. Download checkpoints from Hugging Face, and place in the corresponding folders ( `ckpts/` ):
 
-- SceneMaker checkpoints: https://huggingface.co/horizon171852/SceneMakerSceneMaker
+- SceneMaker checkpoints: [https://huggingface.co/horizon171852/SceneMaker](https://huggingface.co/horizon171852/SceneMaker)
 
 ## 🎬 Demo (Segmentation + De-occlusion + 3D object generation + Pose estimation)
 
